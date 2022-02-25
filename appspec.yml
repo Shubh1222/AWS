@@ -6,10 +6,10 @@ files:
    
 hooks:
   BeforeInstall:
-    - location: install_dependencies
+    - location: install_dependencies.sh
       timeout: 300
       runas: root
-    - location: start_server
+    - location: start_server.sh
       timeout: 300
       runas: root 
  
