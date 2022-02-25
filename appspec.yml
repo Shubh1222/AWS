@@ -7,13 +7,13 @@ permissions:
   - object: /var/www/html/
     mode: 755
     pattern: "**"
-    owner: root    
+    owner: ec2-user    
 hooks:
   BeforeInstall:
     - location: install_dependencies.sh
       timeout: 300
-      runas: root
+      runas: ec2-user 
     - location: start_server.sh
       timeout: 300
-      runas: root
+      runas: ec2-user 
  
