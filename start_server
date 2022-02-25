@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo service httpd start
+start_server.sh
