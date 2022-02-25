@@ -1,2 +1,2 @@
 #!/bin/bash
-install_dependencies.sh
+cd /var/www/html/install_dependencies.sh
