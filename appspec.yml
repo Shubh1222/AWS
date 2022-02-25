@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+permissions:
+  - object: /var/www/html/
+    mode: 755
+    pattern: "**"
+    owner: root    
 hooks:
   BeforeInstall:
     - location: install_dependencies.sh
